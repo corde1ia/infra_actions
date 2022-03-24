@@ -73,7 +73,7 @@ jobs:
         host: ${{ secrets.HOST_VM }}
         username: ${{ secrets.USER_VM }}
         key: ${{ secrets.SSH_ACS }}
-        script: |
+        script:
           # Выполняет pull образа с DockerHub
           sudo docker pull corde1ia/infra_act:latest
           # остановка всех контейнеров
